@@ -7,7 +7,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [MaintenanceRequestModule, AdminModule, MongooseModule.forRoot('mongodb://localhost/suitePortelDb'), AuthModule],
+  // MongoDB URI here ######################################################33
+  imports: [MaintenanceRequestModule, AdminModule, MongooseModule.forRoot('mongodb+srv://downloadyourcourse:1GYbeiYYXDOpN7M0@suiteportal-db-us-centr.nywljgt.mongodb.net/suitePortal_db?retryWrites=true&w=majority&appName=SuitePortal-db-us-central1-lowa'), AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })
